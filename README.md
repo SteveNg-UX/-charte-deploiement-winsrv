@@ -8,7 +8,7 @@
 
 ---
 
-### Guide d'utilisaiton :
+### Guide d'utilisaiton via Console :
 1. Télécharger /Cloner le projet
 2. Ouvrir la console Powershell
 3. se diriger dans le dossier projet
@@ -17,7 +17,7 @@
 .\run.ps1
 ```
 
-##### Alternative :
+### Guide d'utilisaiton via Interface Graphique :
 1. Télécharger /Cloner le projet
 2. se diriger dans le dossier projet via l'explorateur de fichier
 3. Clique-droit sur le fichier "run.ps1"
