@@ -11,9 +11,8 @@
 ### Guide d'utilisaiton :
 1. Télécharger /Cloner le projet
 2. Ouvrir la console Powershell
-3. lancer la commande suivant :
-4. se diriger dans le dossier projet
-5. une fois les modifications fait en fonction du besoin, lancer la commande suivante :
+3. se diriger dans le dossier projet
+4. une fois les modifications fait en fonction du besoin, lancer la commande suivante :
 ```Powershell
 .\run.ps1
 ```
