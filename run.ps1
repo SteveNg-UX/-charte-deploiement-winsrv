@@ -5,11 +5,8 @@ Import-Module -Name ".\core\utils"
 
 
 function Deployer-Service {
-    $serveurs = $(Charger-DonneYAML -CHEMIN_FICHIER_YAML '.\data\hotes.yaml').SERVEURS
-    $service = $(Charger-DonneYAML -CHEMIN_FICHIER_YAML '.\data\deploiement-service.yaml').SERVICES
-
-    Install-Module -Name 'Posh-SSH' -Force
-    Import-Module -Name 'Posh-SSH'
+    $serveurs = $(Charger-DonneYAML -CHEMIN_FICHIER_YAML ".\data\hotes.yaml").SERVEURS
+    $service = $(Charger-DonneYAML -CHEMIN_FICHIER_YAML ".\data\deploiement-service.yaml").SERVICES
 
     Foreach ($srv in $serveurs){
         Foreach ($dm in $service){
@@ -19,7 +16,7 @@ function Deployer-Service {
                     UserName    = $srv.Utilisateur
                     KeyFilePath = $srv.Cle_SSH
                 }
-                Invoke-Command -FilePath '.\modules\${dm.Role}.psm1' -SSHConnection $Session
+                Invoke-Command -FilePath ".\modules\$(dm.Role).psm1" -SSHConnection $Session
             }
         }
     }

@@ -1,0 +1,1 @@
+$DATA = $(Charger-DonneYAML -CHEMIN_FICHIER_YAML "..\data\Remote-Desktop-Services\donnee.yaml").DONNEE
