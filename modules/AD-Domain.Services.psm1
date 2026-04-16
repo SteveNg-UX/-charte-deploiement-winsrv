@@ -5,8 +5,7 @@ if ((Get-WindowsFeature -Name "AD-Domain-Services").InstallState -ne 'Installed'
     Install-WindowsFeature -Name "AD-Domain-Services" -IncludeManagementTools -Force
 }
 
-Add-WindowsFeature -Name "AD-Domain-Services", "DNS", "RSAT-AD-Tools", "RSAT-RemoteAccess", "GPMC" -IncludeAllSubFeature
-Import-Module ADDSDeployment
+Import-Module -Name "ADDSDeployment"
 Install-ADDSForest `
     -CreateDnsDelegation:$false `
     -DatabasePath $DONNEE.Chemin_BDD `

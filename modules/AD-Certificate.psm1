@@ -5,6 +5,7 @@ if ((Get-WindowsFeature -Name "AD-Certificate").InstallState -ne 'Installed'){
     Install-WindowsFeature -Name "AD-Certificate" -IncludeManagementTools -Force
 }
 
+Import-Module -Name "ADCSDeployment"
 Install-AdcsCertificationAuthority `
     -AllowAdministratorInteraction:$DONNEE.AllowAdministratorInteraction `
     -ValidityPeriod $DONNEE.ValidityPeriod `

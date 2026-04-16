@@ -1,1 +1,22 @@
-DONNEE:
+DONNEE:DONNEE:
+  CAType: 'EnterpriseRootCA'
+  CACommonName: 'test.local'
+  CADistinguishedNameSuffix: 'DC=test, DC=local'
+  CADistinguishedName: 'CN=vm01-ca-prod-75, DC=test, DC=local'
+  IgnoreUnicode: false
+  OverwriteExistingKey: false
+  OverwriteExistingCAinDS: false
+  ValidityPeriod: 'Years'
+  ValidityPeriodUnits: 5
+  CryptoProviderName: 'RSA'
+  HashAlgorithmName: 'SHA1'
+  KeyLength: 2048
+  KeyContainerName: ''
+  AllowAdministratorInteraction: false
+  CertFile: ''
+  CertificateID: ''
+  OutputCertRequestFile: ''
+  DatabaseDirectory: 'C:\Windows\system32\CertLog'
+  LogDirectory: 'C:\Windows\system32\CertLog'
+  OverwriteExistingDatabase: false
+  ParentCA: ''
