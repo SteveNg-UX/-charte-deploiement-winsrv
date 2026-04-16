@@ -3,3 +3,4 @@ $DATA = $(Charger-DonneYAML -CHEMIN_FICHIER_YAML "..\data\AD-Certificate\donnee.
 if ((Get-WindowsFeature -Name "AD-Certificate").InstallState -ne 'Installed'){
     Install-WindowsFeature -Name "AD-Certificate" -IncludeManagementTools -Force
 }
+
