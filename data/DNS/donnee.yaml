@@ -1,1 +1,38 @@
 DONNEE:
+  Enregistrement:
+    A:
+    - Nom:
+      NomZone:
+      IPv4:
+      TTL:
+    AAAA:
+    - Nom:
+      NomZone:
+      IPv6:
+      TTL:
+    CNAME:
+    - Nom:
+      NomZone:
+      AliasHote:
+      TTL:
+    MX:
+    - Nom:
+      NomZone:
+      MailExchange:
+      Preference:
+      TTL:
+    PTR:
+    - Nom:
+      NomZone:
+      PtrNomDomaine:
+    SRV:
+    - Nom:
+      NomZone:
+      NomDomaine:
+      Priorite:
+      Poid:
+      Port:
+    TXT:
+    - Nom:
+      NomZone:
+      DescriptiveText:
