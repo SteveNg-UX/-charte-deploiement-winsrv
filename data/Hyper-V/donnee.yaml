@@ -2,25 +2,25 @@ DONNEE:
   Domaine:
   Cluster:
     IPv4:
-    IP_Reseau:
+    IPReseau:
   San:
-  - Name:
+  - Nom:
     WorldWideNodeName:
     WorldWidePortName:
   ResourcePool:
-  - Name:
-    Paths: []
-    ResourcePoolType:
+  - Nom:
+    Chemin: []
+    TypeResourcePool:
   Switch:
-  - Name: "vSwitch"
-    NetAdapterName: "Ethernet"
-    AllowManagementOS:
-    MinimumBandwidthMode:
-    EnableIov:
-    EnablePacketDirect:
-    EnableEmbeddedTeaming:
+  - Nom: "vSwitch"
+    NomInterfaceReseau: "Ethernet"
+    AutoriserGestionOS: true
+    ModeBandePassanteMinimale: 
+    ActiverVirtualisationEntreeSortie: false
+    ActiverPacketDirect: false
+    ActiverRegroupementEmbarque: false
   VM:
-  - Name:
+  - Nom:
     MemoryStartupBytes:
     Generation:
     NewVHDPath:
