@@ -7,38 +7,38 @@ DONNEE:
     ServeursMaitre: []
   Enregistrement:
     A:
-    - Nom:
-      NomZone:
-      IPv4:
-      TTL:
+      - Nom:
+        NomZone:
+        IPv4:
+        TTL:
     AAAA:
-    - Nom:
-      NomZone:
-      IPv6:
-      TTL:
+      - Nom:
+        NomZone:
+        IPv6:
+        TTL:
     CNAME:
-    - Nom:
-      NomZone:
-      AliasHote:
-      TTL:
+      - Nom:
+        NomZone:
+        AliasHote:
+        TTL:
     MX:
-    - Nom:
-      NomZone:
-      MailExchange:
-      Preference:
-      TTL:
+      - Nom:
+        NomZone:
+        MailExchange:
+        Preference:
+        TTL:
     PTR:
-    - Nom:
-      NomZone:
-      PtrNomDomaine:
+      - Nom:
+        NomZone:
+        PtrNomDomaine:
     SRV:
-    - Nom:
-      NomZone:
-      NomDomaine:
-      Priorite:
-      Poid:
-      Port:
+      - Nom:
+        NomZone:
+        NomDomaine:
+        Priorite:
+        Poid:
+        Port:
     TXT:
-    - Nom:
-      NomZone:
-      DescriptiveText:
+      - Nom:
+        NomZone:
+        DescriptiveText:
