@@ -6,8 +6,8 @@ if ((-not (Get-Command -Name "Get-ADDomain" -ErrorAction SilentlyContinue)) -and
     Add-Computer -DomainName $DONNEE.CACommonName
 }
 
-if ((Get-WindowsFeature -Name "AD-Certificate").InstallState -ne 'Installed'){
-    Install-WindowsFeature -Name "AD-Certificate" -IncludeManagementTools -IncludeAllSubFeature
+if ((Get-WindowsFeature -Name "AD-Cert-Authority").InstallState -ne 'Installed'){
+    Install-WindowsFeature -Name "AD-Cert-Authority" -IncludeManagementTools -IncludeAllSubFeature
 }
 
 Import-Module -Name "ADCSDeployment"
