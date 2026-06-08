@@ -1,5 +1,5 @@
-Install-PackageProvider -Name "Nutget" -MinimalVersion 2.9.8.201 -Force:$true
-Install-Module -Name "powersell-yaml" -Force:$true
+Install-PackageProvider -Name "NuGet" -MinimumVersion 2.8.5.201 -Force
+Install-Module -Name "powershell-yaml" -Force
 
 function Charger-DonneYAML {
     param(
