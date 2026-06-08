@@ -1,4 +1,7 @@
-functionfunction Charger-DonneYAML {
+Install-PackageProvider -Name "Nutget" -MinimalVersion 2.9.8.201 -Force:$true
+Install-Module -Name "powersell-yaml" -Force:$true
+
+function Charger-DonneYAML {
     param(
         [String]$CHEMIN_FICHIER_YAML = ".\data.yaml"
     )
